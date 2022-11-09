@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 69px;
+  border-bottom: solid 1px seashell;
+}
+
+header img {
+  height: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#logo {
+  margin-left: 10px;
+}
+
+#nav_bar {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 370px;
+  justify-content: space-between;
+}
+
+#nav_bar a {
+  color: seashell;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #nav_bar a {
+    font-size: 1rem;
+  }
+
+  #mission h4 {
+    font-size: 1rem;
+  }
+}
+
+#nav_bar div {
+  flex-grow: 1 1;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#banner {
+  background-image: url(resources/img-mission-background.jpg);
+  background-size: cover;
+  height: 700px;
+  background-position: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#mission {
+  color: seashell;
+  width: 1200px;
+  min-height: 100px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_name {
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.parent {
+  position: relative;
+  top: 30px;
+  max-width: 1000px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.first.child {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+.second.child {
+  max-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.second.child h4 {
+  position: relative;
+  top: 10px;
+}
+
+#location {
+  background-image: url(resources/img-locations-background.jpg);
+  background-size: cover;
+  margin: 2rem 0 2rem 0;
+  padding: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  flex-direction: column;
+}
+
+.location.top {
+  min-height: 150px;
+}
+
+.location.top h2 {
+  position: relative;
+  top: 100px;
+}
+
+.location.bottom {
+  min-height: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.location.box {
+  background-color: black;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contacts {
+  position: relative;
+  top: 120px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#copyright {
+  width: 100%;
+  margin-left: 20px;
+  min-height: 50px;
+  text-align: left;
+  position: relative;
+  top: 150px;
+  opacity: 0.85;
+}
